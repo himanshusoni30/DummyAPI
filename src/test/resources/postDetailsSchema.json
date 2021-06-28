@@ -1,0 +1,170 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1624854113.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"owner",
+		"id",
+		"image",
+		"publishDate",
+		"text",
+		"tags",
+		"link",
+		"likes"
+	],
+	"properties": {
+		"owner": {
+			"$id": "#root/owner", 
+			"title": "Owner", 
+			"type": "object",
+			"required": [
+				"id",
+				"title",
+				"firstName",
+				"lastName",
+				"email",
+				"picture"
+			],
+			"properties": {
+				"id": {
+					"$id": "#root/owner/id", 
+					"title": "Id", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"60d0fe4f5311236168a109ca"
+					],
+					"pattern": "^.*$"
+				},
+				"title": {
+					"$id": "#root/owner/title", 
+					"title": "Title", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"ms"
+					],
+					"pattern": "^.*$"
+				},
+				"firstName": {
+					"$id": "#root/owner/firstName", 
+					"title": "Firstname", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Sara"
+					],
+					"pattern": "^.*$"
+				},
+				"lastName": {
+					"$id": "#root/owner/lastName", 
+					"title": "Lastname", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Andersen"
+					],
+					"pattern": "^.*$"
+				},
+				"email": {
+					"$id": "#root/owner/email", 
+					"title": "Email", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"sara.andersen@example.com"
+					],
+					"pattern": "^.*$"
+				},
+				"picture": {
+					"$id": "#root/owner/picture", 
+					"title": "Picture", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"https://randomuser.me/api/portraits/women/58.jpg"
+					],
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"60d21b4667d0d8992e610c85"
+			],
+			"pattern": "^.*$"
+		},
+		"image": {
+			"$id": "#root/image", 
+			"title": "Image", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://img.dummyapi.io/photo-1564694202779-bc908c327862.jpg"
+			],
+			"pattern": "^.*$"
+		},
+		"publishDate": {
+			"$id": "#root/publishDate", 
+			"title": "Publishdate", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2020-05-24T14:53:17.598Z"
+			],
+			"pattern": "^.*$"
+		},
+		"text": {
+			"$id": "#root/text", 
+			"title": "Text", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"adult Labrador retriever"
+			],
+			"pattern": "^.*$"
+		},
+		"tags": {
+			"$id": "#root/tags", 
+			"title": "Tags", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/tags/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"animal"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"link": {
+			"$id": "#root/link", 
+			"title": "Link", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://www.instagram.com/teddyosterblomphoto/"
+			],
+			"pattern": "^.*$"
+		},
+		"likes": {
+			"$id": "#root/likes", 
+			"title": "Likes", 
+			"type": "integer",
+			"examples": [
+				43
+			],
+			"default": 0
+		}
+	}
+}

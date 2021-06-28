@@ -1,0 +1,68 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1624859592.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"data",
+		"total",
+		"page",
+		"limit",
+		"offset"
+	],
+	"properties": {
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/data/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"sand"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"total": {
+			"$id": "#root/total", 
+			"title": "Total", 
+			"type": "integer",
+			"examples": [
+				228
+			],
+			"default": 0
+		},
+		"page": {
+			"$id": "#root/page", 
+			"title": "Page", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		},
+		"limit": {
+			"$id": "#root/limit", 
+			"title": "Limit", 
+			"type": "integer",
+			"examples": [
+				20
+			],
+			"default": 0
+		},
+		"offset": {
+			"$id": "#root/offset", 
+			"title": "Offset", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		}
+	}
+}

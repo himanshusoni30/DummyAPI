@@ -1,0 +1,178 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1624863661.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"data",
+		"total",
+		"page",
+		"limit",
+		"offset"
+	],
+	"properties": {
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/data/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"owner",
+					"id",
+					"message",
+					"publishDate"
+				],
+				"properties": {
+					"owner": {
+						"$id": "#root/data/items/owner", 
+						"title": "Owner", 
+						"type": "object",
+						"required": [
+							"id",
+							"title",
+							"firstName",
+							"lastName",
+							"email",
+							"picture"
+						],
+						"properties": {
+							"id": {
+								"$id": "#root/data/items/owner/id", 
+								"title": "Id", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"60d0fe4f5311236168a10a01"
+								],
+								"pattern": "^.*$"
+							},
+							"title": {
+								"$id": "#root/data/items/owner/title", 
+								"title": "Title", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"mr"
+								],
+								"pattern": "^.*$"
+							},
+							"firstName": {
+								"$id": "#root/data/items/owner/firstName", 
+								"title": "Firstname", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"Jesus"
+								],
+								"pattern": "^.*$"
+							},
+							"lastName": {
+								"$id": "#root/data/items/owner/lastName", 
+								"title": "Lastname", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"Riley"
+								],
+								"pattern": "^.*$"
+							},
+							"email": {
+								"$id": "#root/data/items/owner/email", 
+								"title": "Email", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"jesus.riley@example.com"
+								],
+								"pattern": "^.*$"
+							},
+							"picture": {
+								"$id": "#root/data/items/owner/picture", 
+								"title": "Picture", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"https://randomuser.me/api/portraits/med/men/45.jpg"
+								],
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"id": {
+						"$id": "#root/data/items/id", 
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"60d224f067d0d8992e6119da"
+						],
+						"pattern": "^.*$"
+					},
+					"message": {
+						"$id": "#root/data/items/message", 
+						"title": "Message", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Breathtaking image"
+						],
+						"pattern": "^.*$"
+					},
+					"publishDate": {
+						"$id": "#root/data/items/publishDate", 
+						"title": "Publishdate", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"2020-05-03T04:58:05.284Z"
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"total": {
+			"$id": "#root/total", 
+			"title": "Total", 
+			"type": "integer",
+			"examples": [
+				3
+			],
+			"default": 0
+		},
+		"page": {
+			"$id": "#root/page", 
+			"title": "Page", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		},
+		"limit": {
+			"$id": "#root/limit", 
+			"title": "Limit", 
+			"type": "integer",
+			"examples": [
+				20
+			],
+			"default": 0
+		},
+		"offset": {
+			"$id": "#root/offset", 
+			"title": "Offset", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		}
+	}
+}
